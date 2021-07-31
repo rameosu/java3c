@@ -6,11 +6,10 @@
 - autoconfigure 模块，包含自动配置代码，并将需要启动就加载的自动配置类，配置在META-INF/spring- factories文件中
 - starter 模块，它提供对 autoconfigure 模块依赖关系以及类库和常用的其他依赖关系
 
-其依赖关系如下：
-```mermaid
-graph TD
-xxx-xxx-project --> xxx-xxx-starter --> xxx-xxx-autoconfigurer
-```
+其依赖关系如下：  
+
+![image](https://user-images.githubusercontent.com/46550155/127732500-e980c561-0cb0-4cfa-9bf6-fdc890c94f04.png)
+
 `如果你不想将这两个模块分开，也可以将自动配置代码和依赖关系管理组合在一个模块中`
 
 ### 使用Starter的好处

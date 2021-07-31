@@ -11,6 +11,7 @@
 - [Spring](#nav-4)
 - [SpringBoot](#nav-5)
 - [SpringCloud](#nav-6)
+- [算法&数据结构](#nav-7)
 
 
 <span id="nav-2"></span>
@@ -25,6 +26,7 @@
 <span id="nav-3"></span>
 
 ## 📐 UML
+- [⭐程序员画图神器-PlantUml](/docs/Uml/程序员画图神器-PlantUml.md)
 
 <span id="nav-4"></span>
 
@@ -40,3 +42,7 @@
 
 ## 🚀 SpringCloud
 
+<span id="nav-7"></span>
+
+## 🔑 算法&数据结构
+- [以五子棋为例硬撸稀疏数组](/docs/Algorithm/以五子棋为例硬撸稀疏数组.md)

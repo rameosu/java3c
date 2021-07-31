@@ -166,7 +166,7 @@ TIDYING -- "terminated()" --> TERMINATED
 
 ### execute()源码解读
 
-```Java
+```java
     // 使用原子操作类AtomicInteger的ctl变量，前3位记录线程池的状态，后29位记录线程数
     private final AtomicInteger ctl = new AtomicInteger(ctlOf(RUNNING, 0));
     // Integer的范围为[-2^31,2^31 -1], Integer.SIZE-3 =32-3= 29，用来辅助左移位运算
@@ -187,7 +187,7 @@ TIDYING -- "terminated()" --> TERMINATED
     private static int ctlOf(int rs, int wc) { return rs | wc; } // 获取ctl对象
 ```
 
-```Java
+```java
 public void execute(Runnable command) {
     if (command == null) // 任务为空，抛出NPE
         throw new NullPointerException();
@@ -213,7 +213,7 @@ public void execute(Runnable command) {
         reject(command); // 执行拒绝策略
 }
 ```
-``` Java
+``` java
 private boolean addWorker(Runnable firstTask, boolean core) {
     retry: // 循环退出标志位
     for (;;) { // 无限循环
@@ -294,7 +294,7 @@ private boolean addWorker(Runnable firstTask, boolean core) {
     return workerStarted;
 }
 ```
-```Java
+```java
 private void addWorkerFailed(Worker w) {
     final ReentrantLock mainLock = this.mainLock;
     mainLock.lock();
@@ -308,7 +308,7 @@ private void addWorkerFailed(Worker w) {
     }
 }
 ```
-```Java
+```java
 final void tryTerminate() {
     for (;;) {
         int c = ctl.get();
@@ -351,7 +351,7 @@ final void tryTerminate() {
 
 `Worker`是`ThreadPoolExecutor`类的内部类，此处只讲最重要的构造函数和run方法
 
-```Java
+```java
 private final class Worker extends AbstractQueuedSynchronizer implements Runnable
 {
     // 该worker正在运行的线程
@@ -381,7 +381,7 @@ private final class Worker extends AbstractQueuedSynchronizer implements Runnabl
 
 `Worker`实现了`Runable`接口，在调用start()方法候，实际执行的是run方法
 
-```Java
+```java
 final void runWorker(Worker w) {
     Thread wt = Thread.currentThread();
     Runnable task = w.firstTask; // 获取工作线程中用来执行任务的线程实例
@@ -426,7 +426,7 @@ final void runWorker(Worker w) {
 ```
 #### 从任务队列中取出一个任务
 
-```Java
+```java
 private Runnable getTask() {
     boolean timedOut = false; // 通过timeOut变量表示线程是否空闲时间超时了
     // 无限循环
@@ -478,7 +478,7 @@ private Runnable getTask() {
 
 #### 工作线程退出
 
-```Java
+```java
 private void processWorkerExit(Worker w, boolean completedAbruptly) {
     // 如果completedAbruptly为true则表示任务执行过程中抛出了未处理的异常
     // 所以还没有正确地减少worker计数，这里需要减少一次worker计数

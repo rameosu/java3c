@@ -33,8 +33,8 @@
 <span id="nav-5"></span>
 
 ## ⭐ SpringBoot
-- [Java线程池源码解析](/docs/SpringBoot/mica-auto：SpringBoot Starter开发利器.md)
-- [Java线程池源码解析](/docs/SpringBoot/SpringBoot接入SkyWalking分布式链路追踪.md)
+- [SpringBoot Starter开发利器：mica-auto](/docs/SpringBoot/mica-auto.md)
+- [SpringBoot接入SkyWalking分布式链路追踪](/docs/SpringBoot/SpringBoot接入SkyWalking分布式链路追踪.md)
 
 <span id="nav-6"></span>
 

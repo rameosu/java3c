@@ -118,20 +118,25 @@ TIDYING -- "terminated()" --> TERMINATED
 
 ### 拒绝策略
 - CallerRunsPolicy（在当前线程中执行）
+- 
 ![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/74a15e5b5c9041bd803e150100e4533e~tplv-k3u1fbpfcp-watermark.image)
 
 - AbortPolicy（直接抛出RejectedExecutionException）
+- 
 ![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c9da146f9ce44a508bfeab6c33f313cc~tplv-k3u1fbpfcp-watermark.image)
 
 - DiscardPolicy（直接丢弃线程）
+- 
 ![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ccf28b6ac5f74e22b3c24d395b2d25f8~tplv-k3u1fbpfcp-watermark.image)
 
 - DiscardOldestPolicy（丢弃一个未被处理的最久的线程，然后重试）
+- 
 ![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f8292d33ece54e07ae75445a162b13da~tplv-k3u1fbpfcp-watermark.image)
 
 当没有显示指明拒绝策略时，默认使用`AbortPolicy`
 
 ![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3d4bf839d95249b8bee2726d5964b78e~tplv-k3u1fbpfcp-watermark.image)
+
 ![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/beee9c9201384243be576d7a4d12f33c~tplv-k3u1fbpfcp-watermark.image)
 
 ### ThreadPoolExecutor类图

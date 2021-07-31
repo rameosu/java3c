@@ -1,0 +1,13 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: ["*"]
+  endpoint:
+    health:
+      show-details: always
+spring:
+  security:
+    user: # 配置安全用户
+      name: admin
+      password: 123456

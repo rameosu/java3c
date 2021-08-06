@@ -1,6 +1,10 @@
 package com.rameosu.rameo.threadpool;
 
+import lombok.Data;
+import lombok.SneakyThrows;
+
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
@@ -21,9 +25,9 @@ public class MiniThreadPool {
     private final BlockingQueue<Task> taskQueue;
 
     /**
-     *
+     * Hash表去持有工作线程的引用
      */
-    private final List<Worker> workers = new ArrayList<>();
+    private final HashSet<Worker> workers = new HashSet<>();
 
     /**
      * 线程池当前状态
@@ -40,7 +44,7 @@ public class MiniThreadPool {
         this.taskQueue = taskQueue;
         status = ThreadPoolStatus.RUNNING;
         for (int i = 0; i < workNumber; i++) {
-            workers.add(new Worker("Worker" + i, taskQueue));
+            workers.add(new Worker("Worker-" + i, taskQueue));
         }
         for (Worker worker : workers) {
             // 创建工作线程
@@ -63,7 +67,7 @@ public class MiniThreadPool {
         }
         // 工作队列已满的操作，这里直接返回，实际开发中可以使用线程池的拒绝策略也可以重试
         if (!this.taskQueue.offer(task)) {
-            System.out.println("任务队列已满");
+            System.out.println("任务队列已满，未执行：" + task.getTaskDesc());
         }
     }
 
@@ -96,6 +100,7 @@ public class MiniThreadPool {
     interface Task extends Runnable {
         /**
          * 获取任务详情
+         *
          * @return
          */
         String getTaskDesc();
@@ -104,6 +109,7 @@ public class MiniThreadPool {
     /**
      * 用于执行任务的工作线程
      */
+    @Data
     class Worker implements Runnable {
 
         private final String name;
@@ -184,16 +190,18 @@ public class MiniThreadPool {
         }
     }
 
+    @SneakyThrows
     public static void main(String[] args) {
-        MiniThreadPool threadPool = new MiniThreadPool(3, new LinkedBlockingQueue<>(3));
-        String[] works = {"打扫", "洗衣服", "做饭", "敲代码", "休息", "打游戏", "看书"};
+        MiniThreadPool threadPool = new MiniThreadPool(3, new LinkedBlockingQueue<>(8));
+        String[] works = {"打扫", "洗衣服", "做饭", "敲代码", "休息", "打游戏", "看书", "运动"};
         for (String work : works) {
+//            Thread.sleep(100);
             threadPool.execute(new Task() {
                 @Override
                 public void run() {
                     System.out.println(Thread.currentThread().getName() + "：" + work);
                     // 下面是你真正要执行的业务逻辑
-//                    calc();
+                    calc();
                 }
 
                 @Override

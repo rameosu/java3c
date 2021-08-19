@@ -47,3 +47,8 @@
 
 ## 🔑 算法&数据结构
 - [以五子棋为例硬撸稀疏数组](/docs/Algorithm/以五子棋为例硬撸稀疏数组.md)
+
+<span id="nav-8"></span>
+
+## 👑 架构
+- [以五子棋为例硬撸稀疏数组](/docs/Architecture/凤凰架构读书笔记.md)

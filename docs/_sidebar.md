@@ -14,5 +14,7 @@
         * [以五子棋为例硬撸稀疏数组](/Algorithm/以五子棋为例硬撸稀疏数组.md)
     * [架构]
         * [凤凰架构读书笔记](/Architecture/凤凰架构读书笔记.md)
+    * [实用技巧]
+        * [如何用docsify改造你的Github-Pages](/Skill/如何用docsify改造你的Github-Pages.md)
         
         

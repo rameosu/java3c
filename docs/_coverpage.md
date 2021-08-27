@@ -1,4 +1,4 @@
-![logo](assert/img/rameo.jpg)
+![logo](assets/rameo/rameo.jpg)
 
 # Rameo My Son
 

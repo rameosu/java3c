@@ -6,6 +6,8 @@
         * [优雅的对象转换-MapStruct](/Java基础/OpenLibrary/优雅的对象转换-MapStruct.md)
     * [UML]
         * [⭐程序员画图神器-PlantUml](/Uml/程序员画图神器-PlantUml.md) 
+    * [MQ]
+        * [⭐如何用RabbitMQ批处理能力优化服务](/MQ/如何用RabbitMQ批处理能力优化服务.md) 
     * [Spring]
     * [SpringBoot]
         * [SpringBoot Starter开发利器：mica-auto](/SpringBoot/mica-auto.md)

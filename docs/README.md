@@ -36,6 +36,7 @@
 ## ⭐ SpringBoot
 - [SpringBoot Starter开发利器：mica-auto](/SpringBoot/mica-auto.md)
 - [SpringBoot接入SkyWalking分布式链路追踪](/SpringBoot/SpringBoot接入SkyWalking分布式链路追踪.md)
+- [极度舒适的统一接口返回和全局异常处理](/SpringBoot/极度舒适的统一接口返回和全局异常处理.md)
 
 <span id="nav-7"></span>
 ## ⚡ SpringCloud

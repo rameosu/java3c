@@ -11,8 +11,9 @@
 - [SpringBoot](#nav-6)
 - [SpringCloud](#nav-7)
 - [算法&数据结构](#nav-8)
-- [架构](#nav-9)
+- [架构设计](#nav-9)
 - [实用技巧](#nav-10)
+- [开发规范](#nav-11)
 
 
 <span id="nav-2"></span>
@@ -31,12 +32,13 @@
 
 <span id="nav-5"></span>
 ## 🍃 Spring
+- [Spring实用代码技巧](/Spring/Spring实用代码技巧.md)
 
 <span id="nav-6"></span>
 ## ⭐ SpringBoot
 - [SpringBoot Starter开发利器：mica-auto](/SpringBoot/mica-auto.md)
 - [SpringBoot接入SkyWalking分布式链路追踪](/SpringBoot/SpringBoot接入SkyWalking分布式链路追踪.md)
-- [极度舒适的统一接口返回和全局异常处理](/SpringBoot/极度舒适的统一接口返回和全局异常处理.md)
+- [SpringBoot统一接口返回和全局异常处理](/SpringBoot/SpringBoot统一接口返回和全局异常处理.md)
 
 <span id="nav-7"></span>
 ## ⚡ SpringCloud
@@ -46,10 +48,15 @@
 - [以五子棋为例硬撸稀疏数组](/Algorithm/以五子棋为例硬撸稀疏数组.md)
 
 <span id="nav-9"></span>
-## 👑 架构
+## 👑 架构设计
 - [凤凰架构读书笔记](/Architecture/凤凰架构读书笔记.md)
 
 <span id="nav-10"></span>
 ## 🔧 实用技巧
 - [如何用docsify改造你的Github-Pages](/Skill/如何用docsify改造你的Github-Pages.md)
 - [Linux下安装MySQL8.0和重置密码](/Skill/Linux下安装MySQL8.0和重置密码.md)
+
+<span id="nav-11"></span>
+## 📘 开发规范
+- [阿里巴巴Java开发手册](/Specification/阿里巴巴Java开发手册.md)
+- [Spring实用代码技巧](/Skill/Linux下安装MySQL8.0和重置密码.md)

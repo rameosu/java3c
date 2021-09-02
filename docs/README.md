@@ -24,11 +24,13 @@
 
 <span id="nav-3"></span>
 ## 📐 UML
-- [⭐程序员画图神器-PlantUml](/UML/程序员画图神器-PlantUml.md)
+- [设计模式（脑图版）](/UML/设计模式（脑图版）.md)
+- [程序员画图神器-PlantUml](/UML/程序员画图神器-PlantUml.md)
+- [系统架构设计核心要素（脑图版）](/UML/系统架构设计核心要素（脑图版）.md)
 
 <span id="nav-4"></span>
 ## 🚀 MQ
-- [⭐如何用RabbitMQ批处理能力优化服务](/MQ/如何用RabbitMQ批处理能力优化服务.md)
+- [如何用RabbitMQ批处理能力优化服务](/MQ/如何用RabbitMQ批处理能力优化服务.md)
 
 <span id="nav-5"></span>
 ## 🍃 Spring
@@ -50,6 +52,7 @@
 <span id="nav-9"></span>
 ## 👑 架构设计
 - [凤凰架构读书笔记](/Architecture/凤凰架构读书笔记.md)
+- [系统架构设计核心要素（大纲版）](/Architecture/系统架构设计核心要素（大纲版）.md)
 
 <span id="nav-10"></span>
 ## 🔧 实用技巧

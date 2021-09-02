@@ -14,6 +14,7 @@
 - [架构设计](#nav-9)
 - [实用技巧](#nav-10)
 - [开发规范](#nav-11)
+- [DDD](#nav-12)
 
 
 <span id="nav-2"></span>
@@ -68,3 +69,7 @@
 - [阿里巴巴Java开发手册](/Specification/阿里巴巴Java开发手册.md)
 - [写JAVA的好习惯](/Specification/写JAVA的好习惯.md)
 - [写SQL的好习惯](/Specification/写SQL的好习惯.md)
+
+<span id="nav-12"></span>
+## ⛳ DDD
+- [如何运用Domain Primitive重构业务代码](/DDD/如何运用Domain-Primitive重构业务代码.md)

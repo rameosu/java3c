@@ -22,11 +22,9 @@
         - [SpringBoot统一接口返回和全局异常处理](/SpringBoot/SpringBoot统一接口返回和全局异常处理.md)
         
     - [⚡SpringCloud]
-    
         - [SpringCloud整体架构](/SpringCloud/SpringCloud整体架构.md)
     
     - [🔑算法&数据结构]
-        
         - [以五子棋为例硬撸稀疏数组](/Algorithm/以五子棋为例硬撸稀疏数组.md)
         
     - [👑架构设计]
@@ -42,5 +40,8 @@
         - [阿里巴巴Java开发手册](/Specification/阿里巴巴Java开发手册.md)
         - [写JAVA的好习惯](/Specification/写JAVA的好习惯.md)
         - [写SQL的好习惯](/Specification/写SQL的好习惯.md)
+     
+    - [⛳DDD]
+        - [如何运用Domain Primitive重构业务代码](/DDD/如何运用Domain-Primitive重构业务代码.md)
         
         

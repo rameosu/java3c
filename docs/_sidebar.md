@@ -42,6 +42,10 @@
         - [写SQL的好习惯](/Specification/写SQL的好习惯.md)
      
     - [⛳DDD]
-        - [如何运用Domain Primitive重构业务代码](/DDD/如何运用Domain-Primitive重构业务代码.md)
+        - [DDD系列第一讲：Domain Primitive](/DDD/DDD系列第一讲：Domain-Primitive.md)
+        - [DDD系列第二讲：应用架构](/DDD/DDD系列第二讲：应用架构.md)
+        - [DDD系列第三讲：Repository模式](/DDD/DDD系列第三讲：Repository模式.md)
+        - [DDD系列第四讲：领域层设计规范](/DDD/DDD系列第四讲：领域层设计规范.md)
+        - [DDD系列第五讲：聊聊如何避免写流水账代码](/DDD/DDD系列第五讲：聊聊如何避免写流水账代码.md)
         
         

@@ -13,7 +13,7 @@ https://skywalking.apache.org/downloads/
 浏览器打开：http://localhost:8080/ 即可访问SkyWalking的管理界面
 
 ![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b3a60c05a2464c3399fcd23867c8cdc0~tplv-k3u1fbpfcp-watermark.image)
-   
+
 ## Springboot接入SkyWalking
 以javaagent的方式接入，对代码无侵入
 
@@ -81,6 +81,8 @@ java -javaagent:/usr/skywalking/agent/skywalking-agent.jar  -Dskywalking.agent.s
 比如使用了Springcloud的gateway组件
 
 ![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1076d755469c4359b4cc421dd354909b~tplv-k3u1fbpfcp-watermark.image)
+
 将上图中\apache-skywalking-apm-bin\agent\optional-plugins下的4个可选插件复制到
 \apache-skywalking-apm-bin\agent\plugins下即可
+
 ![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/fdc581373607441fb69e966cd2c03d07~tplv-k3u1fbpfcp-watermark.image)

@@ -1,23 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Rameo</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <meta name="description" content="Rameo My Son">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.css">
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/style.min.css">
-    <style>
-        .markdown-section code {
-            font-weight: 400;
-        }
-    </style>
-</head>
-<body>
+# docsify进阶使用
+
+在上一篇[《如何用docsify改造你的Github-Pages》](./如何用docsify改造你的Github-Pages.md)中给大家介绍了docsify的基本使用和GitHub Pages的结合使用，这篇文章主要介绍docsify更多的功能，让你的个人主页更漂亮。
+
+先放个整体图，看下有哪些好玩的东西🧐🧐
+
+- **导航列表**
+- **白天/夜间模式切换**
+- **上一篇/下一篇功能**
+- **嵌入GitHub编辑功能**
+- **全局嵌入功能**
+- **页脚**
+- **图片放大**
+- **代码高亮**
+- **代码一键复制到剪切板**
+- **支持emoji表情**
+
+![docsify-1](../assets/docsify/docsify-1.png)
+
+## 导航列表
+
+在`<body>`标签下加入
+
+```html
 <nav>
     <ul>
         <li>
@@ -55,29 +59,22 @@
         </li>
     </ul>
 </nav>
-<div id="app"></div>
+```
+
+## 白天/夜间模式切换
+
+分别引入css、js文件
+
+```html
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/style.min.css">
+<script src="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/index.min.js"></script>
+```
+
+在docsify的初始化js代码中加入
+
+```html
 <script>
     window.$docsify = {
-        name: 'Rameo',
-        repo: 'https://github.com/rameosu/rameo',
-        auto2top: true,
-        coverpage: true,
-        loadSidebar: true,
-        pagination: {
-            previousText: "上一篇",
-            nextText: "下一篇",
-            crossChapter: true,
-            crossChapterText: true,
-        },
-        search: {
-            paths: 'auto',
-            placeholder: '🔍 搜索 ',
-            noData: '😞 No Results! ',
-            depth: 6
-        },
-        plantuml: {
-            skin: 'default',
-        },
         darklightTheme: {
             defaultTheme: 'light',
             siteFont: 'Source Sans Pro,Helvetica Neue,Arial,sans-serif',
@@ -93,9 +90,43 @@
                 highlightColor: '#e96900',
             }
         },
+    };
+</script>
+```
+
+## 上一篇/下一篇
+
+引入js文件
+
+```html
+<script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+```
+
+在docsify的初始化js代码中加入
+
+```html
+<script> 	
+	window.$docsify = {
+        pagination: {
+            previousText: "上一篇",
+            nextText: "下一篇",
+            crossChapter: true,
+            crossChapterText: true,
+        },
+    };
+</script>
+```
+
+## 嵌入GitHub编辑功能/全局嵌入功能/页脚
+
+在docsify的初始化js代码中加入plugins功能
+
+```html
+<script>
+    window.$docsify = {
         plugins: [
             function (hook, vm) {
-                hook.beforeEach(function (content) {
+                hook.beforeEach(function (content) { // content为md文件本身的内容
                     const en = vm.route.file.indexOf("README_EN") > -1;
                     if (/githubusercontent\.com/.test(vm.route.file)) {
                         url = vm.route.file
@@ -107,12 +138,14 @@
                             vm.route.file;
                     }
                     const github = `[GitHub](${url})`;
+                    // 全局嵌入GitHub编辑功能
                     const editHtml = en
                         ? `:memo: Edit on ${github}\n`
                         : `:memo: 在 ${github}编辑\n`;
                     if (vm.route.path == "/") {
                         return editHtml + content;
                     }
+                    // 全局嵌入代码
                     const subscription = `
                         <h2>打赏</h2>
                         如果您觉得作者的文章对您有所帮助，可以打赏 <b style="color: #e96900">0.88元</b> 支持一下作者，这也将成为作者持续更新，持续开源文章的动力。
@@ -138,9 +171,10 @@
                             </tr>
                         </table>
                     `;
+                    // 拼接的内容即为页面最终渲染的效果
                     return editHtml + content + `<br>` + subscription;
                 });
-                hook.afterEach(function (html) {
+                hook.afterEach(function (html) { // 页脚
                     const footer = [
                         "<footer style='text-align: center;'>",
                         '<span>Copyright © 2021-2024 <a href="https://github.com/rameosu/rameo" target="_blank">Rameo</a>. All rights reserved.',
@@ -152,13 +186,21 @@
         ],
     };
 </script>
-<!-- Docsify v4 -->
-<script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
-<script src="//unpkg.com/mermaid/dist/mermaid.js"></script>
-<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
-<script src="//unpkg.com/docsify-mermaid@latest/dist/docsify-mermaid.js"></script>
-<script src="//unpkg.com/docsify-plantuml/dist/docsify-plantuml.min.js"></script>
+```
+
+## 图片放大
+
+引入js文件
+
+```html
 <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+```
+
+## 代码高亮
+
+引入js文件，支持不同类型的代码
+
+```html
 <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-json.min.js"></script>
 <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-java.min.js"></script>
 <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-bash.min.js"></script>
@@ -171,9 +213,30 @@
 <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-yaml.min.js"></script>
 <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-properties.min.js"></script>
 <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-xml-doc.min.js"></script>
+```
+
+以Java代码为例
+
+![docsify-2](../assets/docsify/docsify-2.png)
+
+## 代码一键复制到剪切板
+
+引入js文件
+
+```html
 <script src="//cdn.jsdelivr.net/npm/docsify-copy-code@2.1.1/dist/docsify-copy-code.min.js"></script>
-<script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
-<script src="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/index.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.js"></script>
-</body>
-</html>
+```
+
+![docsify-3](../assets/docsify/docsify-3.png)
+
+## 支持emoji表情
+
+引入js文件
+
+```html
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
+```
+
+## 最后
+
+`注意：`以上的代码均是加到你的docs目录下的`index.html`文件中。

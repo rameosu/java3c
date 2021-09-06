@@ -55,12 +55,16 @@
 
 <span id="nav-9"></span>
 ## 👑 架构设计
-- [凤凰架构读书笔记](/Architecture/凤凰架构读书笔记.md)
+- [凤凰架构读书笔记-架构演进](/Architecture/凤凰架构读书笔记-架构演进.md)
+- [凤凰架构读书笔记-演示工程](/Architecture/凤凰架构读书笔记-演示工程.md)
+- [凤凰架构读书笔记-远程服务](/Architecture/凤凰架构读书笔记-远程服务.md)
+- [凤凰架构读书笔记-事务处理](/Architecture/凤凰架构读书笔记-事务处理.md)
 - [系统架构设计核心要素（大纲版）](/Architecture/系统架构设计核心要素（大纲版）.md)
 
 <span id="nav-10"></span>
 ## 🔧 实用技巧
 - [如何用docsify改造你的Github-Pages](/Skill/如何用docsify改造你的Github-Pages.md)
+- [docsify进阶使用](/Skill/docsify进阶使用.md)
 - [Linux下安装MySQL8.0和重置密码](/Skill/Linux下安装MySQL8.0和重置密码.md)
 - [IDEA插件集成](/Skill/IDEA插件集成.md)
 

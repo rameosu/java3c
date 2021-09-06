@@ -28,11 +28,16 @@
         - [以五子棋为例硬撸稀疏数组](/Algorithm/以五子棋为例硬撸稀疏数组.md)
         
     - [👑架构设计]
-        - [凤凰架构读书笔记](/Architecture/凤凰架构读书笔记.md)
+        - [凤凰架构读书笔记-架构演进](/Architecture/凤凰架构读书笔记-架构演进.md)
+        - [凤凰架构读书笔记-演示工程](/Architecture/凤凰架构读书笔记-演示工程.md)
+        - [凤凰架构读书笔记-远程服务](/Architecture/凤凰架构读书笔记-远程服务.md)
+        - [凤凰架构读书笔记-事务处理](/Architecture/凤凰架构读书笔记-事务处理.md)
         - [系统架构设计核心要素（大纲版）](/Architecture/系统架构设计核心要素（大纲版）.md)
         
     - [🔧实用技巧]
+        
         - [如何用docsify改造你的Github-Pages](/Skill/如何用docsify改造你的Github-Pages.md)
+        - [docsify进阶使用](/Skill/docsify进阶使用.md)
         - [Linux下安装MySQL8.0和重置密码](/Skill/Linux下安装MySQL8.0和重置密码.md)    
         - [IDEA插件集成](/Skill/IDEA插件集成.md)    
         
@@ -40,7 +45,7 @@
         - [阿里巴巴Java开发手册](/Specification/阿里巴巴Java开发手册.md)
         - [写JAVA的好习惯](/Specification/写JAVA的好习惯.md)
         - [写SQL的好习惯](/Specification/写SQL的好习惯.md)
-     
+    
     - [⛳DDD]
         - [DDD系列第一讲：Domain Primitive](/DDD/DDD系列第一讲：Domain-Primitive.md)
         - [DDD系列第二讲：应用架构](/DDD/DDD系列第二讲：应用架构.md)

@@ -52,5 +52,8 @@
         - [DDD系列第三讲：Repository模式](/DDD/DDD系列第三讲：Repository模式.md)
         - [DDD系列第四讲：领域层设计规范](/DDD/DDD系列第四讲：领域层设计规范.md)
         - [DDD系列第五讲：聊聊如何避免写流水账代码](/DDD/DDD系列第五讲：聊聊如何避免写流水账代码.md)
+    
+    - [🎯Redis]
+        - [Redis的典型应用场景](/Redis/Redis的应用场景.md)
         
         

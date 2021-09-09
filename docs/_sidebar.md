@@ -40,6 +40,7 @@
         - [docsify进阶使用](/Skill/docsify进阶使用.md)
         - [Linux下安装MySQL8.0和重置密码](/Skill/Linux下安装MySQL8.0和重置密码.md)    
         - [IDEA插件集成](/Skill/IDEA插件集成.md)    
+        - [Markdown表情符号大全](/Skill/Markdown表情符号大全.md)    
         
     - [📘开发规范]
         - [阿里巴巴Java开发手册](/Specification/阿里巴巴Java开发手册.md)

@@ -2,3 +2,4 @@
 
 ## 🚀 MQ
 - [如何用RabbitMQ批处理能力优化服务](/MQ/如何用RabbitMQ批处理能力优化服务.md)
+

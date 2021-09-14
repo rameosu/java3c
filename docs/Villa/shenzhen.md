@@ -12,3 +12,5 @@
 
 [深圳市龙岗区大鹏镇璞岸花园（一期）2号楼101房产](https://sf-item.taobao.com/sf_item/650709970096.htm?spm=a213w.7398504.paiList.14.732e6b82q4SN9g&track_id=d7a510da-b58b-4ad8-a0bd-140c6eab973a)
 
+[深圳市龙岗区龙岗中心城新亚洲花园新礼苑A3栋复式11E](https://sf-item.taobao.com/sf_item/653878520064.htm?spm=a213w.7398504.paiList.17.5d546b824eg9Sm&track_id=6caf2949-0858-466b-9a99-b2431d569fbc)
+

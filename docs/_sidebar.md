@@ -34,7 +34,8 @@
         - [凤凰架构读书笔记-远程服务](/Architecture/凤凰架构读书笔记-远程服务.md)
         - [凤凰架构读书笔记-事务处理](/Architecture/凤凰架构读书笔记-事务处理.md)
         - [系统架构设计核心要素（大纲版）](/Architecture/系统架构设计核心要素（大纲版）.md)
-        - [限流的思路](/Architecture/限流的思路.md)
+        - [服务限流的思路](/Architecture/服务限流的思路.md)
+        - [服务降级的思路](/Architecture/服务降级的思路.md)
         
     - [🔧实用技巧]
       

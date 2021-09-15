@@ -14,6 +14,7 @@
 - **代码高亮**
 - **代码一键复制到剪切板**
 - **支持emoji表情**
+- **字数统计**
 
 ![docsify-1](../assets/docsify/docsify-1.png)
 
@@ -236,6 +237,32 @@
 ```html
 <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
 ```
+
+## 字数统计
+
+引入js文件
+
+```html
+<script src="//unpkg.com/docsify-count/dist/countable.js"></script>
+```
+
+在docsify的初始化js代码中加入
+
+```html
+<script> 	
+	window.$docsify = {
+        count:{
+            countable:true,
+            position:'bottom',
+            fontsize: "0.9em",
+            color: "rgb(90,90,90)",
+            language:'chinese'
+        },
+    };
+</script>
+```
+
+
 
 ## 最后
 

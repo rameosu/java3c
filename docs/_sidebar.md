@@ -58,6 +58,7 @@
         - [DDD系列第五讲：聊聊如何避免写流水账代码](/DDD/DDD系列第五讲：聊聊如何避免写流水账代码.md)
     
     - [🎯Redis]
+        - [Redis持久化](/Redis/Redis持久化.md)
         - [Redis的典型应用场景](/Redis/Redis的应用场景.md)
         - [Redis内存淘汰策略和过期键清除策略](/Redis/Redis内存淘汰策略和过期键清除策略.md)
         

@@ -48,9 +48,7 @@
 - [SpringBoot统一接口返回和全局异常处理](/SpringBoot/SpringBoot统一接口返回和全局异常处理.md)
 
 <span id="nav-7"></span>
-
 ## ⚡ SpringCloud
-
 - [SpringCloud整体架构](/SpringCloud/SpringCloud整体架构.md)
 
 <span id="nav-8"></span>
@@ -74,6 +72,8 @@
 - [docsify进阶使用](/Skill/docsify进阶使用.md)
 - [Linux下安装MySQL8.0和重置密码](/Skill/Linux下安装MySQL8.0和重置密码.md)
 - [IDEA插件集成](/Skill/IDEA插件集成.md)
+- [Sentinel快速接入](/Skill/Sentinel快速接入.md)
+- [Nacos快速接入](/Skill/Nacos快速接入.md)
 - [Markdown表情符号大全](/Skill/Markdown表情符号大全.md)
 
 <span id="nav-11"></span>

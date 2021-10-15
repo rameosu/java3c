@@ -1,5 +1,10 @@
 - [:octocat: 首页](/README)
-- :memo: 目录
+
+- ##### 💸 涨薪秘籍专栏
+  - [【爆肝48小时】1.2W字长文讲解分布式系统](/SalaryIncrease/【爆肝48小时】1.2W字长文讲解分布式系统.md)
+
+- ##### :memo: 目录
+    
     - [☕ Java]
         - [Java线程池源码解析](/Java/Java线程池源码解析.md)
         - [如何撸一个mini线程池](/Java/如何撸一个mini线程池.md)

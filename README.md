@@ -10,6 +10,12 @@
 
 ![logo](docs/assets/rameo/logo.png)
 
+## 💸 涨薪秘籍专栏
+
+[【爆肝48小时】1.2W字长文讲解分布式系统](/SalaryIncrease/【爆肝48小时】1.2W字长文讲解分布式系统.md)
+
+
+
 <span id="nav-1"></span>
 
 ## ☕ Java

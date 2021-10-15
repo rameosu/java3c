@@ -1,6 +1,6 @@
 ![logo](assets/rameo/logo.png)
 
-# Java3C 
+# JAVA3C 
 
 ## 📚 Java开发、架构师升职加薪必备
 

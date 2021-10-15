@@ -9,8 +9,8 @@
         - [SpringBoot接入SkyWalking分布式链路追踪](/Java//SpringBoot/SpringBoot接入SkyWalking分布式链路追踪.md)
         - [SpringBoot统一接口返回和全局异常处理](/Java//SpringBoot/SpringBoot统一接口返回和全局异常处理.md)
     - [💻 操作系统]
-    - [☁ 网络]
-    - [✏ 算法]
+    - [☁️ 网络]
+    - [✏️ 算法]
         - [以五子棋为例硬撸稀疏数组](/Algorithm/以五子棋为例硬撸稀疏数组.md)
         - [撸一撸限流算法](/Algorithm/撸一撸限流算法.md)
     - [💾 数据库]

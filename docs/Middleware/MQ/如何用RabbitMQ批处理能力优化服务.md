@@ -18,7 +18,7 @@
 
 从 2.2 版本开始，您可以将侦听器容器工厂和侦听器配置为一次调用接收整个批次，只需设置工厂的 batchListener 属性，并将方法有效负载参数设为 `List`。
 
-![rabbitmq-1](../assets/rabbitmq/rabbitmq-1.png)
+![rabbitmq-1](../../assets/rabbitmq/rabbitmq-1.png)
 
 ## 代码实现
 

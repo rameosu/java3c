@@ -168,7 +168,7 @@ public class TransferServiceImpl implements TransferService {
 
 在重构之前，我们先画一张流程图，描述当前代码在做的每个步骤：
 
-![DDD-4](../assets/ddd/DDD-4.png)
+![DDD-4](../../assets/ddd/DDD-4.png)
 
 这是一个传统的三层分层结构：UI层、业务层、和基础设施层。上层对于下层有直接的依赖关系，导致耦合度过高。在业务层中对于下层的基础设施有强依赖，耦合度高。我们需要对这张图上的每个节点做抽象和整理，来降低对外部依赖的耦合度。
 
@@ -270,7 +270,7 @@ DAO 和 Repository 类的对比如下：
 - Repository作为一个接口类，可以比较容易的实现Mock或Stub，可以很容易测试。
 - AccountRepositoryImpl实现类，由于其职责被单一出来，只需要关注Account到AccountDO的映射关系和Repository方法到DAO方法之间的映射关系，相对于来说更容易测试。
 
-![DDD-5](../assets/ddd/DDD-5.png)
+![DDD-5](../../assets/ddd/DDD-5.png)
 
 ### 抽象第三方服务
 
@@ -300,7 +300,7 @@ public class ExchangeRateServiceImpl implements ExchangeRateService {
 
 这种常见的设计模式叫做Anti-Corruption Layer（防腐层或ACL）。很多时候我们的系统会去依赖其他的系统，而被依赖的系统可能包含不合理的数据结构、API、协议或技术实现，如果对外部系统强依赖，会导致我们的系统被”腐蚀“。这个时候，通过在系统间加入一个防腐层，能够有效的隔离外部依赖和内部逻辑，无论外部如何变更，内部代码可以尽可能的保持不变。
 
-![DDD-6](../assets/ddd/DDD-6.png)
+![DDD-6](../../assets/ddd/DDD-6.png)
 
 ACL 不仅仅只是多了一层调用，在实际开发中ACL能够提供更多强大的功能：
 
@@ -310,7 +310,7 @@ ACL 不仅仅只是多了一层调用，在实际开发中ACL能够提供更多�
 - **易于测试：**类似于之前的Repository，ACL的接口类能够很容易的实现Mock或Stub，以便于单元测试。
 - **功能开关：**有些时候我们希望能在某些场景下开放或关闭某个接口的功能，或者让某个接口返回一个特定的值，我们可以在ACL配置功能开关来实现，而不会对真实业务代码造成影响。同时，使用功能开关也能让我们容易的实现Monkey测试，而不需要真正物理性的关闭外部依赖。
 
-![DDD-7](../assets/ddd/DDD-7.png)
+![DDD-7](../../assets/ddd/DDD-7.png)
 
 ### 抽象中间件
 
@@ -361,7 +361,7 @@ public class AuditMessageProducerImpl implements AuditMessageProducer {
 
 具体的分析和抽象第三方服务类似，在此略过。
 
-![DDD-8](../assets/ddd/DDD-8.png)
+![DDD-8](../../assets/ddd/DDD-8.png)
 
 ### 封装业务逻辑
 
@@ -461,7 +461,7 @@ public class AccountTransferServiceImpl implements AccountTransferService {
 accountTransferService.transfer(sourceAccount, targetAccount, targetMoney, exchangeRate);
 ```
 
-![DDD-9](../assets/ddd/DDD-9.png)
+![DDD-9](../../assets/ddd/DDD-9.png)
 
 ### 重构后结果分析
 
@@ -509,11 +509,11 @@ public class TransferServiceImplNew implements TransferService {
 
 我们可以根据新的结构重新画一张图：
 
-![DDD-10](../assets/ddd/DDD-10.png)
+![DDD-10](../../assets/ddd/DDD-10.png)
 
 然后通过重新编排后该图变为：
 
-![DDD-11](../assets/ddd/DDD-11.png)
+![DDD-11](../../assets/ddd/DDD-11.png)
 
 我们可以发现，通过对外部依赖的抽象和内部逻辑的封装重构，应用整体的依赖关系变了：
 
@@ -527,7 +527,7 @@ public class TransferServiceImplNew implements TransferService {
 
 在我们传统的代码里，我们一般都很注重每个外部依赖的实现细节和规范，但是今天我们需要敢于抛弃掉原有的理念，重新审视代码结构。在上面重构的代码里，如果抛弃掉所有Repository、ACL、Producer等的具体实现细节，我们会发现每一个对外部的抽象类其实就是输入或输出，类似于计算机系统中的I/O节点。这个观点在CQRS架构中也同样适用，将所有接口分为Command（输入）和Query（输出）两种。除了I/O之外其他的内部逻辑，就是应用业务的核心逻辑。基于这个基础，Alistair Cockburn在2005年提出了Hexagonal Architecture（六边形架构），又被称之为Ports and Adapters（端口和适配器架构）。
 
-![DDD-12](../assets/ddd/DDD-12.png)
+![DDD-12](../../assets/ddd/DDD-12.png)
 
 在这张图中：
 
@@ -540,45 +540,45 @@ public class TransferServiceImplNew implements TransferService {
 
 除了2005年的Hex架构，2008年 Jeffery Palermo的Onion Architecture（洋葱架构）和2017年 Robert Martin的Clean Architecture（干净架构），都是极为类似的思想。除了命名不一样、切入点不一样之外，其他的整体架构都是基于一个二维的内外关系。这也说明了基于DDD的架构最终的形态都是类似的。Herberto Graca有一个很全面的图包含了绝大部分现实中的端口类，值得借鉴。
 
-![DDD-13](../assets/ddd/DDD-13.png)
+![DDD-13](../../assets/ddd/DDD-13.png)
 
 ### 代码组织结构
 
 为了有效的组织代码结构，避免下层代码依赖到上层实现的情况，在Java中我们可以通过POM Module和POM依赖来处理相互的关系。通过Spring/SpringBoot的容器来解决运行时动态注入具体实现的依赖的问题。一个简单的依赖关系图如下：
 
-![DDD-14](../assets/ddd/DDD-14.png)
+![DDD-14](../../assets/ddd/DDD-14.png)
 
-![DDD-15](../assets/ddd/DDD-15.png)
+![DDD-15](../../assets/ddd/DDD-15.png)
 
 #### Types 模块
 
 Types模块是保存可以对外暴露的Domain Primitives的地方。Domain Primitives因为是无状态的逻辑，可以对外暴露，所以经常被包含在对外的API接口中，需要单独成为模块。Types模块不依赖任何类库，纯 POJO 。
 
-![DDD-16](../assets/ddd/DDD-16.png)
+![DDD-16](../../assets/ddd/DDD-16.png)
 
 #### Domain 模块
 
 Domain 模块是核心业务逻辑的集中地，包含有状态的Entity、领域服务Domain Service、以及各种外部依赖的接口类（如Repository、ACL、中间件等。Domain模块仅依赖Types模块，也是纯 POJO 。
 
-![DDD-17](../assets/ddd/DDD-17.png)
+![DDD-17](../../assets/ddd/DDD-17.png)
 
 #### Application模块
 
 Application模块主要包含Application Service和一些相关的类。Application模块依赖Domain模块。还是不依赖任何框架，纯POJO。
 
-![DDD-18](../assets/ddd/DDD-18.png)
+![DDD-18](../../assets/ddd/DDD-18.png)
 
 #### Infrastructure模块
 
 Infrastructure模块包含了Persistence、Messaging、External等模块。比如：Persistence模块包含数据库DAO的实现，包含Data Object、ORM Mapper、Entity到DO的转化类等。Persistence模块要依赖具体的ORM类库，比如MyBatis。如果需要用Spring-Mybatis提供的注解方案，则需要依赖Spring。
 
-![DDD-19](../assets/ddd/DDD-19.png)
+![DDD-19](../../assets/ddd/DDD-19.png)
 
 #### Web模块
 
 Web模块包含Controller等相关代码。如果用SpringMVC则需要依赖Spring。
 
-![DDD-20](../assets/ddd/DDD-20.png)
+![DDD-20](../../assets/ddd/DDD-20.png)
 
 #### Start模块
 

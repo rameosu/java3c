@@ -24,7 +24,7 @@ SpringCloud对常见的`分布式系统`模式提供了简单易用的`编程模
 
 ## 架构图
 
-![springcloud-1](../assets/springcloud/springcloud-1.png)
+![springcloud-1](../../assets/springcloud/springcloud-1.png)
 
 ## 版本命名
 

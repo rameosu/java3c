@@ -119,7 +119,7 @@ public class UserMapStructTest {
 
 1. 在 `target/generated-sources/annotations` 里可以看到，代码中可以看到其生成了一个`实现类`， 而代码也类似于我们手写。这个在编译期生成的代码，性能比反射要快不少。
 
-   ![mapstruct-1](../../assets/mapstruct/mapstruct-1.png)
+   ![mapstruct-1](../assets/mapstruct/mapstruct-1.png)
 
 2. MapStruct是利用编译期动态生成set/get代码的class文件 ，在运行时直接调用该class文件。 该方式实际上仍会存在set/get代码，只是不需要自己手写。
 
@@ -136,7 +136,7 @@ public class UserMapStructTest {
 - 当多个原对象中，有相同名字的属性时，需要通过 @Mapping 注解来具体的指定，以免出现歧义
 - 当有多个属性不一致时，有两种解决方式
 
-![mapstruct-2](../../assets/mapstruct/mapstruct-2.png)
+![mapstruct-2](../assets/mapstruct/mapstruct-2.png)
 
 1. 添加多个@Mapping（推荐）
 2. 用@Mappings将多个@Mapping包起来（sonar检测会告警，不影响使用）

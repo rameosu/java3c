@@ -116,11 +116,11 @@ public class UserService4 implements InitializingBean {
 
 他们的调用优先级如图：
 
-![spring-1](../assets/spring/spring-1.png)
+![spring-1](../../assets/spring/spring-1.png)
 
 ***
 
-![spring-2](../assets/spring/spring-2.png)
+![spring-2](../../assets/spring/spring-2.png)
 
 ## 强大的@Conditional
 
@@ -134,7 +134,7 @@ public class UserService4 implements InitializingBean {
 
 这时候就可以用到Conditional家族了
 
-![spring-3](../assets/spring/spring-3.png)
+![spring-3](../../assets/spring/spring-3.png)
 
 介绍几个常用的：
 
@@ -252,13 +252,13 @@ public class MyCondition implements Condition {
 
 `Conditional`的奥秘就藏在`ConfigurationClassParser`类的`processConfigurationClass`方法中： 
 
-![spring-15](../assets/spring/spring-15.png)
+![spring-15](../../assets/spring/spring-15.png)
 
 
 
 这个方法逻辑流程： 
 
-![spring-16](../assets/spring/spring-16.png)
+![spring-16](../../assets/spring/spring-16.png)
 
 
 
@@ -370,7 +370,7 @@ public class UserController {
 
 关于跨域问题，前后端的解决方案还是挺多的，这里我重点说说spring的解决方案，目前有三种： 
 
-![spring-17](../assets/spring/spring-17.png)
+![spring-17](../../assets/spring/spring-17.png)
 
 ### 使用@CrossOrigin注解
 
@@ -444,7 +444,7 @@ public class CorsFilter implements Filter {
 
 其实使用`@CrossOrigin`注解 和 实现`WebMvcConfigurer`接口的方案，spring在底层最终都会调用到`DefaultCorsProcessor`类的`handleInternal`方法：
 
-![spring-18](../assets/spring/spring-18.png)
+![spring-18](../../assets/spring/spring-18.png)
 
 都会往`header`中添加跨域需要参数，只是实现形式不一样而已。
 
@@ -483,11 +483,11 @@ public class TestRunner implements ApplicationRunner {
 
 ### springboot启动主要流程 
 
-![spring-4](../assets/spring/spring-4.png)
+![spring-4](../../assets/spring/spring-4.png)
 
  在`SpringApplication`类的`callRunners`方法中，我们能看到这两个接口的具体调用：
 
-![spring-5](../assets/spring/spring-5.png)
+![spring-5](../../assets/spring/spring-5.png)
 
 ## Enable开关真香
 
@@ -623,7 +623,7 @@ public class ThreadPoolConfig {
 
 `AsyncExecutionAspectSupport.class`
 
-![spring-6](../assets/spring/spring-6.png)
+![spring-6](../../assets/spring/spring-6.png)
 
 根据返回值不同，处理情况也不太一样，具体分为如下情况： 
 
@@ -636,11 +636,11 @@ public class ThreadPoolConfig {
 
 ### spring cache架构图
 
-![spring-7](../assets/spring/spring-7.png)
+![spring-7](../../assets/spring/spring-7.png)
 
 ### 多种缓存
 
-![spring-8](../assets/spring/spring-8.png)
+![spring-8](../../assets/spring/spring-8.png)
 
 ### 代码实现
 
@@ -738,7 +738,7 @@ public class CategoryService {
 
 ### Starter标准组件 
 
-![spring-9](../assets/spring/spring-9.png)
+![spring-9](../../assets/spring/spring-9.png)
 
 ### 代码实现
 
@@ -746,7 +746,7 @@ public class CategoryService {
 
 创建rpa-excel-starter工程： 
 
-![spring-10](../assets/spring/spring-10.png)
+![spring-10](../../assets/spring/spring-10.png)
 
 
 
@@ -788,9 +788,9 @@ public class CategoryService {
 
 可以从pom依赖中看到我们并没有依赖rpa-excel-autoconfigure工程，因为使用了mica-auto自动生成 `spring.factories`文件，并将Configuration配置类写入到spring.factories。
 
-![spring-11](../assets/spring/spring-11.png)
+![spring-11](../../assets/spring/spring-11.png)
 
-![spring-12](../assets/spring/spring-12.png)
+![spring-12](../../assets/spring/spring-12.png)
 
 
 
@@ -848,7 +848,7 @@ public class ImageExportVo {
 
 ## Spring大事务优化
 
-![spring-13](../assets/spring/spring-13.png)
+![spring-13](../../assets/spring/spring-13.png)
 
 ### 少用@Transactional注解
 
@@ -942,7 +942,7 @@ public void save(User user) {
 
 > 同一个类中非事务方法直接调用事务方法，事务是不会生效的。因为@Transactional注解的声明式事务是通过spring aop起作用的，而spring aop需要生成代理对象，直接方法调用使用的还是原始对象，所以事务不会生效。
 
-![spring-14](../assets/spring/spring-14.png)
+![spring-14](../../assets/spring/spring-14.png)
 
 
 

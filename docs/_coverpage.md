@@ -1,9 +1,9 @@
-![logo](assets/rameo/rameo.jpg)
+![logo](assets/rameo/logo.png)
 
-# Rameo My Son
+# Java3C 
 
-## 某不知名Java开发者的工作、学习、经验记录  
+## 📚 Java开发、架构师升职加薪必备
 
-[GitHub](<https://github.com/rameosu/rameo>)
+[GitHub](<https://github.com/rameosu/java3c>)
 [开始阅读](README.md)
 

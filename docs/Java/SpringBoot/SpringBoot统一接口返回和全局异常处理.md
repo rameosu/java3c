@@ -251,11 +251,11 @@ public class UserController {
 
 ### 测试结果
 
-![api-result-1](../assets/springboot/api-result-1.png)
+![api-result-1](../../assets/springboot/api-result-1.png)
 
 ------
 
-![api-result-2](../assets/springboot/api-result-2.png)
+![api-result-2](../../assets/springboot/api-result-2.png)
 
 ## 全局异常处理
 
@@ -432,12 +432,12 @@ public class GlobalExceptionHandler {
 
 ### 测试结果
 
-![api-result-3](../assets/springboot/api-result-3.png)
+![api-result-3](../../assets/springboot/api-result-3.png)
 
 ------
 
-![api-result-4](../assets/springboot/api-result-4.png)
+![api-result-4](../../assets/springboot/api-result-4.png)
 
 ------
 
-![api-result-5](../assets/springboot/api-result-5.png)
+![api-result-5](../../assets/springboot/api-result-5.png)

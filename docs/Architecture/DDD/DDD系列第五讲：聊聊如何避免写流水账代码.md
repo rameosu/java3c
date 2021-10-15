@@ -12,7 +12,7 @@
 
 这里举一个简单的常见案例：下单链路。假设我们在做一个checkout接口，需要做各种校验、查询商品信息、调用库存服务扣库存、然后生成订单：
 
-![DDD-27](../assets/ddd/DDD-27.png)
+![DDD-27](../../assets/ddd/DDD-27.png)
 
 一个比较典型的代码如下：
 
@@ -222,7 +222,7 @@ public interface BabyCardService {
 
 也许会有人问，如果按照这种做法，会不会产生大量的接口类，导致代码逻辑重复？答案是不会，因为在DDD分层架构里，接口类的核心作用仅仅是协议层，每类业务的协议可以是不同的，而真实的业务逻辑会沉淀到应用层。也就是说Interface和Application的关系是多对多的：
 
-![DDD-28](../assets/ddd/DDD-28.png)
+![DDD-28](../../assets/ddd/DDD-28.png)
 
 因为业务需求是快速变化的，所以接口层也要跟着快速变化，通过独立的接口层可以避免业务间相互影响，但我们希望相对稳定的是Application层的逻辑。所以我们接下来看一下Application层的一些规范。
 
@@ -402,7 +402,7 @@ ApplicationService负责了业务流程的编排，是将原有业务流水账�
 
 参考一个简易的交易流程：
 
-![DDD-29](../assets/ddd/DDD-29.png)
+![DDD-29](../../assets/ddd/DDD-29.png)
 
 在这个案例里可以看出来，交易这个领域一共有5个用例：下单、支付成功、支付失败关单、物流信息更新、关闭订单。这5个用例可以用5个Command/Event对象代替，也就是对应了5个方法。
 
@@ -622,7 +622,7 @@ public class CheckoutServiceImpl implements CheckoutService {
 
 结合之前的Data Mapper，DTO、Entity和DataObject之间的关系如下图：
 
-![DDD-30](../assets/ddd/DDD-30.png)
+![DDD-30](../../assets/ddd/DDD-30.png)
 
 ### 3.5 Result vs Exception
 
@@ -653,11 +653,11 @@ ACL防腐层的简单原理如下：
 
 无防腐层的情况：
 
-![DDD-31](../assets/ddd/DDD-31.png)
+![DDD-31](../../assets/ddd/DDD-31.png)
 
 有防腐层的情况：
 
-![DDD-32](../assets/ddd/DDD-32.png)
+![DDD-32](../../assets/ddd/DDD-32.png)
 
 具体简单实现，假设所有外部依赖都命名为ExternalXXXService：
 
@@ -747,11 +747,11 @@ Repository可以认为是一种特殊的ACL，屏蔽了具体数据操作的细�
 
 Orchestration：通常出现在脑海里的是一个交响乐团（Orchestra，注意这两个词的相似性），如下图。交响乐团的核心是一个唯一的指挥家Conductor，在一个交响乐中，所有的音乐家必须听从Conductor的指挥做操作，不可以独自发挥。所以在Orchestration模式中，所有的流程都是由一个节点或服务触发的。我们常见的业务流程代码，包括调用外部服务，就是Orchestration，由我们的服务统一触发。
 
-![DDD-33](../assets/ddd/DDD-33.png)
+![DDD-33](../../assets/ddd/DDD-33.png)
 
 Choreography：通常会出现在脑海的场景是一个舞剧（来自于希腊文的舞蹈，Choros），如下图。其中每个不同的舞蹈家都在做自己的事，但是没有一个中心化的指挥。通过协作配合，每个人做好自己的事，整个舞蹈可以展现出一个完整的、和谐的画面。所以在Choreography模式中，每个服务都是独立的个体，可能会响应外部的一些事件，但整个系统是一个整体。
 
-![DDD-34](../assets/ddd/DDD-34.png)
+![DDD-34](../../assets/ddd/DDD-34.png)
 
 ### 4.2 案例
 
@@ -759,11 +759,11 @@ Choreography：通常会出现在脑海的场景是一个舞剧（来自于希�
 
 如果这个案例是Orchestration，则业务逻辑为：下单时从一个预存的账户里扣取资金，并且生成物流单发货，从图上看是这样的：
 
-![DDD-35](../assets/ddd/DDD-35.png)
+![DDD-35](../../assets/ddd/DDD-35.png)
 
 如果这个案例是Choreography，则业务逻辑为：下单，然后等支付成功事件，然后再发货，类似这样：
 
-![DDD-36](../assets/ddd/DDD-36.png)
+![DDD-36](../../assets/ddd/DDD-36.png)
 
 ### 4.3 模式的区别和选择
 
@@ -804,8 +804,8 @@ Choreography：通常会出现在脑海的场景是一个舞剧（来自于希�
 
 这里给出两个判断方法：
 
-1. 明确依赖的方向：![DDD-37](../assets/ddd/DDD-37.png)在代码中的依赖是比较明确的：如果你是下游，上游对你无感知，则只能走事件驱动；如果上游必须要对你有感知，则可以走指令驱动。反过来，如果你是上游，需要对下游强依赖，则是指令驱动；如果下游是谁无所谓，则可以走事件驱动。
-2. 找出业务中的“负责人”：![DDD-38](../assets/ddd/DDD-38.png)
+1. 明确依赖的方向：![DDD-37](../../assets/ddd/DDD-37.png)在代码中的依赖是比较明确的：如果你是下游，上游对你无感知，则只能走事件驱动；如果上游必须要对你有感知，则可以走指令驱动。反过来，如果你是上游，需要对下游强依赖，则是指令驱动；如果下游是谁无所谓，则可以走事件驱动。
+2. 找出业务中的“负责人”：![DDD-38](../../assets/ddd/DDD-38.png)
 
 第二种方法是根据业务场景找出其中的“负责人”。比如，如果业务需要通知卖家，下单系统的单一职责不应该为消息通知负责，但订单管理系统需要根据订单状态的推进主动触发消息，所以是这个功能的负责人。
 

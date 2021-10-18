@@ -4,11 +4,13 @@
 
 ### Github Page：https://rameosu.github.io/java3c
 
+### 微信公众号：【程序员有意思】
+
 | Java        | 操作系统    | 网络        | 算法                | 数据库      | UML         | 架构设计    | 设计模式    | 实用技巧    | 开发规范     | 中间件              |
 | ----------- | ----------- | ----------- | ------------------- | ----------- | ----------- | ----------- | ----------- | ----------- | ------------ | ------------------- |
 | [☕](#nav-1) | [💻](#nav-1) | [☁️](#nav-3) | [✏️](#nav-4) | [💾](#nav-5) | [📐](#nav-6) | [👑](#nav-7) | [🎯](#nav-8) | [🔧](#nav-9) | [📘](#nav-10) | [🚀](#nav-10) |
 
-![logo](docs/assets/rameo/logo.png) ![qrcode](docs/assets/rameo/dynamic-code.png)
+![logo](docs/assets/rameo/logo.png) 
 
 ## 💸 涨薪秘籍专栏
 - [【爆肝48小时】1.5W字长文讲解分布式系统](https://rameosu.github.io/java3c/#/SalaryIncrease/1.5W%E5%AD%97%E9%95%BF%E6%96%87%E8%AE%B2%E8%A7%A3%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F)
@@ -107,3 +109,8 @@
 - [Redis内存淘汰策略和过期键清除策略](https://rameosu.github.io/java3c/#/Middleware/Redis/Redis内存淘汰策略和过期键清除策略.md)
 - [Redisson分布式锁的AOP实现](https://rameosu.github.io/java3c/#/Middleware/Redis/Redisson分布式锁的AOP实现.md)
 
+
+
+## 👉获取学习资料
+
+![qrcode](docs/assets/rameo/dynamic-code.png)

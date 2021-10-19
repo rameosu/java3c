@@ -128,30 +128,36 @@
                     if (vm.route.path == "/") {
                         return editHtml + content;
                     }
+                    // const subscription = `
+                    //     <h2>打赏</h2>
+                    //     如果您觉得作者的文章对您有所帮助，可以打赏 <b style="color: #e96900">0.88元</b> 支持一下作者，这也将成为作者持续更新，持续开源文章的动力。
+                    //     </br>
+                    //     </br>
+                    //     当然，也可以加我个人微信（备注：<b style="color: #e96900">GitHub</b>），一起交流进步。
+                    //     </br>
+                    //     </br>
+                    //     <table>
+                    //         <tr>
+                    //           <td align="center" style="width: 200px;">
+                    //             <a href="https://rameosu.github.io/java3c">
+                    //               <img src="./assets/rameo/wechat_pay.jpg" style="width: 400px;"><br>
+                    //               <sub>微信扫码打赏</sub>
+                    //             </a><br>
+                    //           </td>
+                    //           <td align="center" style="width: 200px;">
+                    //             <a href="https://rameosu.github.io/java3c">
+                    //               <img src="./assets/rameo/wechat_qrcode.jpg" style="width: 400px;"><br>
+                    //               <sub>个人微信</sub>
+                    //             </a><br>
+                    //           </td>
+                    //         </tr>
+                    //     </table>
+                    // `;
                     const subscription = `
-                        <h2>打赏</h2>
-                        如果您觉得作者的文章对您有所帮助，可以打赏 <b style="color: #e96900">0.88元</b> 支持一下作者，这也将成为作者持续更新，持续开源文章的动力。
+                        <h2>🎁 福利</h2>
+                        微信搜索公众号 ⭐ <b style="color: red">程序员有意思</b> ⭐ 或者扫描下面的二维码关注，即可获得最新、最全、最实用的学习资料。
                         </br>
-                        </br>
-                        当然，也可以加我个人微信（备注：<b style="color: #e96900">GitHub</b>），一起交流进步。
-                        </br>
-                        </br>
-                        <table>
-                            <tr>
-                              <td align="center" style="width: 200px;">
-                                <a href="https://rameosu.github.io/java3c">
-                                  <img src="./assets/rameo/wechat_pay.jpg" style="width: 400px;"><br>
-                                  <sub>微信扫码打赏</sub>
-                                </a><br>
-                              </td>
-                              <td align="center" style="width: 200px;">
-                                <a href="https://rameosu.github.io/java3c">
-                                  <img src="./assets/rameo/wechat_qrcode.jpg" style="width: 400px;"><br>
-                                  <sub>个人微信</sub>
-                                </a><br>
-                              </td>
-                            </tr>
-                        </table>
+                        <img src="./assets/rameo/dynamic-code.png"><br>
                     `;
                     return editHtml + content + `<br>` + subscription;
                 });

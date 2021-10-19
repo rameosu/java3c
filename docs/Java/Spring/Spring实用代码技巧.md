@@ -1178,11 +1178,11 @@ order方法用于下单，delivery方法用于发货，是不是下单后就一�
 这里发货功能其实可以走mq异步处理逻辑。
 
 ```java
-   @Autowired
+  @Autowired
    private TransactionTemplate transactionTemplate;
-   
+
    ...
-   
+
    public void save(final User user) {
          transactionTemplate.execute((status) => {
             order();
@@ -1191,3 +1191,4 @@ order方法用于下单，delivery方法用于发货，是不是下单后就一�
          sendMq();
    }
 ```
+

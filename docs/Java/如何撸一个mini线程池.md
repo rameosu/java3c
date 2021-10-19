@@ -42,7 +42,6 @@
 
 ```java
 public class MiniThreadPool {
-
     /**
      * 阻塞任务队列
      */
@@ -183,7 +182,7 @@ public class MiniThreadPool {
          * 线程池被创建后的初始状态，能接受新提交的任务，并且也能处理阻塞队列中的任务
          */
         RUNNING,
-        
+
         /**
          * 中断状态
          * 中断正在处理任务的线程，不能再接受新任务，也不继续处理队列中的任务

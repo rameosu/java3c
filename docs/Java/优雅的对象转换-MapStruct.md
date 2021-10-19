@@ -146,3 +146,6 @@ public class UserMapStructTest {
 - 官网：https://mapstruct.org/
 - Github地址：https://github.com/mapstruct/mapstruct/
 - 实例分享：https://github.com/mapstruct/mapstruct-examples
+
+
+

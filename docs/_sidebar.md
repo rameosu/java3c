@@ -10,10 +10,10 @@
         - [Java线程池源码解析](/Java/Java线程池源码解析.md)
         - [如何撸一个mini线程池](/Java/如何撸一个mini线程池.md)
         - [优雅的对象转换-MapStruct](/Java/优雅的对象转换-MapStruct.md)
-        - [Spring实用代码技巧](/Java//Spring/Spring实用代码技巧.md)
-        - [SpringBoot Starter开发利器：mica-auto](/Java//SpringBoot/mica-auto.md)
-        - [SpringBoot接入SkyWalking分布式链路追踪](/Java//SpringBoot/SpringBoot接入SkyWalking分布式链路追踪.md)
-        - [SpringBoot统一接口返回和全局异常处理](/Java//SpringBoot/SpringBoot统一接口返回和全局异常处理.md)
+        - [Spring实用代码技巧](/Java/Spring/Spring实用代码技巧.md)
+        - [SpringBoot Starter开发利器：mica-auto](/Java/SpringBoot/mica-auto.md)
+        - [SpringBoot接入SkyWalking分布式链路追踪](/Java/SpringBoot/SpringBoot接入SkyWalking分布式链路追踪.md)
+        - [SpringBoot统一接口返回和全局异常处理](/Java/SpringBoot/SpringBoot统一接口返回和全局异常处理.md)
     - [💻 操作系统]
     - [☁️ 网络]
     - [✏️ 算法]
@@ -54,7 +54,7 @@
         - [Markdown表情符号大全](/Skill/Markdown表情符号大全.md)
     - [📘 开发规范]
         - [阿里巴巴Java开发手册](/Specification/阿里巴巴Java开发手册.md)
-        - [MySQL数据库开发规范.md](/Specification/MySQL数据库开发规范.md)
+        - [MySQL数据库开发规范](/Specification/MySQL数据库开发规范.md)
         - [写JAVA的好习惯](/Specification/写JAVA的好习惯.md)
         - [写SQL的好习惯](/Specification/写SQL的好习惯.md)
     - [🚀 中间件]

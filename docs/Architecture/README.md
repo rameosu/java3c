@@ -10,6 +10,7 @@
 - [系统架构设计核心要素（大纲版）](/Architecture/系统架构设计核心要素（大纲版）.md)
 - [服务限流的思路](/Architecture/服务限流的思路.md)
 - [服务降级的思路](/Architecture/服务降级的思路.md)
+- [构建高性能Web站点](/Architecture/构建高性能Web站点.md)
 - [SpringCloud整体架构](/Architecture/SpringCloud/SpringCloud整体架构.md)
 - [DDD系列第一讲：Domain Primitive](/Architecture/DDD/DDD系列第一讲：Domain-Primitive.md)
 - [DDD系列第二讲：应用架构](/Architecture/DDD/DDD系列第二讲：应用架构.md)

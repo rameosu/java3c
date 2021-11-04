@@ -9,7 +9,7 @@
 ![logo](assets/rameo/logo.png)
 ![poster](assets/rameo/poster.jpg)
 
-## 📝 架构师专栏
+## 📝 超级架构师
 - [数据库模式](/Architect/数据库模式.md)
 
 ## 💸 涨薪秘籍专栏

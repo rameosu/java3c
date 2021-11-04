@@ -12,7 +12,7 @@
 
 ![logo](docs/assets/rameo/logo.png) 
 
-## 📝 架构师专栏
+## 📝 超级架构师
 - [数据库模式](https://rameosu.github.io/java3c/#/Architect/数据库模式.md)
 
 ## 💸 涨薪秘籍专栏

@@ -1,7 +1,7 @@
 - [:octocat: 首页](/README)
 
 - ##### 📝 架构师专栏
-  - [数据库模式与范式](/Architect/数据库模式与范式.md)
+  - [数据库模式](/Architect/数据库模式.md)
 - ##### 💸 涨薪秘籍专栏
   - [1.5W字长文讲解分布式系统](/SalaryIncrease/1.5W字长文讲解分布式系统.md)
   - [阿里巴巴10个顶级开源项目](/SalaryIncrease/阿里巴巴10个顶级开源项目.md)

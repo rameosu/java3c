@@ -10,3 +10,4 @@
 - [SpringBoot Starter开发利器：mica-auto](/Java/SpringBoot/mica-auto.md)
 - [SpringBoot接入SkyWalking分布式链路追踪](/Java/SpringBoot/SpringBoot接入SkyWalking分布式链路追踪.md)
 - [SpringBoot统一接口返回和全局异常处理](/Java/SpringBoot/SpringBoot统一接口返回和全局异常处理.md)
+- [还在重复造轮子？hutool一键搞定](/Java/还在重复造轮子？hutool一键搞定.md)

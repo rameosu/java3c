@@ -1,5 +1,7 @@
 - [:octocat: 首页](/README)
 
+- ##### 📝 架构师专栏
+  - [数据库模式与范式](/Architect/数据库模式与范式.md)
 - ##### 💸 涨薪秘籍专栏
   - [1.5W字长文讲解分布式系统](/SalaryIncrease/1.5W字长文讲解分布式系统.md)
   - [阿里巴巴10个顶级开源项目](/SalaryIncrease/阿里巴巴10个顶级开源项目.md)
@@ -14,6 +16,7 @@
         - [SpringBoot Starter开发利器：mica-auto](/Java/SpringBoot/mica-auto.md)
         - [SpringBoot接入SkyWalking分布式链路追踪](/Java/SpringBoot/SpringBoot接入SkyWalking分布式链路追踪.md)
         - [SpringBoot统一接口返回和全局异常处理](/Java/SpringBoot/SpringBoot统一接口返回和全局异常处理.md)
+        - [还在重复造轮子？hutool一键搞定](/Java/还在重复造轮子？hutool一键搞定.md)
     - [💻 操作系统]
     - [☁️ 网络]
     - [✏️ 算法]

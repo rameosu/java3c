@@ -7,6 +7,7 @@
 - [如何撸一个mini线程池](/Java/如何撸一个mini线程池.md)
 - [优雅的对象转换-MapStruct](/Java/优雅的对象转换-MapStruct.md)
 - [Spring实用代码技巧](/Java/Spring/Spring实用代码技巧.md)
+- [RedisTemplate使用不当导致的线上事故](/Java/Spring/RedisTemplate使用不当导致的线上事故.md)
 - [SpringBoot Starter开发利器：mica-auto](/Java/SpringBoot/mica-auto.md)
 - [SpringBoot接入SkyWalking分布式链路追踪](/Java/SpringBoot/SpringBoot接入SkyWalking分布式链路追踪.md)
 - [SpringBoot统一接口返回和全局异常处理](/Java/SpringBoot/SpringBoot统一接口返回和全局异常处理.md)

@@ -11,6 +11,7 @@
 
 ## 📝 超级架构师
 - [数据库模式](/Architect/数据库模式.md)
+- [DevOps初学指南](/Architect/DevOps初学指南.md)
 
 ## 💸 涨薪秘籍专栏
 - [1.5W字长文讲解分布式系统](/SalaryIncrease/1.5W字长文讲解分布式系统.md)

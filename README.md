@@ -15,6 +15,7 @@
 ## 📝 超级架构师
 - [数据库模式](https://rameosu.github.io/java3c/#/Architect/数据库模式.md)
 - [DevOps初学指南](https://rameosu.github.io/java3c/#/Architect/DevOps初学指南.md)
+- [架构师定义、职业素质和应具备的能力](https://rameosu.github.io/java3c/#/Architect/架构师定义、职业素质和应具备的能力.md)
 
 ## 💸 涨薪秘籍专栏
 - [【爆肝48小时】1.5W字长文讲解分布式系统](https://rameosu.github.io/java3c/#/SalaryIncrease/1.5W%E5%AD%97%E9%95%BF%E6%96%87%E8%AE%B2%E8%A7%A3%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F)
@@ -33,6 +34,8 @@
 - [SpringBoot接入SkyWalking分布式链路追踪](https://rameosu.github.io/java3c/#/Java/SpringBoot/SpringBoot接入SkyWalking分布式链路追踪.md)
 - [SpringBoot统一接口返回和全局异常处理](https://rameosu.github.io/java3c/#/Java/SpringBoot/SpringBoot统一接口返回和全局异常处理.md)
 - [还在重复造轮子？hutool一键搞定](/Java/还在重复造轮子？hutool一键搞定.md)
+- [Java如何实现DistinctBy？](/Java/Java如何实现DistinctBy.md)
+- [一文看懂死锁](/Java/一文看懂死锁.md)
 
 <span id="nav-2"></span>
 

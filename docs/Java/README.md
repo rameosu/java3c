@@ -12,3 +12,5 @@
 - [SpringBoot接入SkyWalking分布式链路追踪](/Java/SpringBoot/SpringBoot接入SkyWalking分布式链路追踪.md)
 - [SpringBoot统一接口返回和全局异常处理](/Java/SpringBoot/SpringBoot统一接口返回和全局异常处理.md)
 - [还在重复造轮子？hutool一键搞定](/Java/还在重复造轮子？hutool一键搞定.md)
+- [Java如何实现DistinctBy？](/Java/Java如何实现DistinctBy.md)
+- [一文看懂死锁](/Java/一文看懂死锁.md)

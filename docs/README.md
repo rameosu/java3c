@@ -12,6 +12,7 @@
 ## 📝 超级架构师
 - [数据库模式](/Architect/数据库模式.md)
 - [DevOps初学指南](/Architect/DevOps初学指南.md)
+- [架构师定义、职业素质和应具备的能力](/Architect/架构师定义、职业素质和应具备的能力.md)
 
 ## 💸 涨薪秘籍专栏
 - [1.5W字长文讲解分布式系统](/SalaryIncrease/1.5W字长文讲解分布式系统.md)
@@ -29,6 +30,8 @@
 - [SpringBoot接入SkyWalking分布式链路追踪](/Java/SpringBoot/SpringBoot接入SkyWalking分布式链路追踪.md)
 - [SpringBoot统一接口返回和全局异常处理](/Java/SpringBoot/SpringBoot统一接口返回和全局异常处理.md)
 - [还在重复造轮子？hutool一键搞定](/Java/还在重复造轮子？hutool一键搞定.md)
+- [Java如何实现DistinctBy？](/Java/Java如何实现DistinctBy.md)
+- [一文看懂死锁](/Java/一文看懂死锁.md)
 
 <span id="nav-2"></span>
 

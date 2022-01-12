@@ -17,7 +17,7 @@
 - [DevOps初学指南](https://rameosu.github.io/java3c/#/Architect/DevOps初学指南.md)
 - [架构师定义、职业素质和应具备的能力](https://rameosu.github.io/java3c/#/Architect/架构师定义、职业素质和应具备的能力.md)
 
-## 💸 涨薪秘籍专栏
+## 💸 涨薪秘籍
 - [【爆肝48小时】1.5W字长文讲解分布式系统](https://rameosu.github.io/java3c/#/SalaryIncrease/1.5W%E5%AD%97%E9%95%BF%E6%96%87%E8%AE%B2%E8%A7%A3%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F)
 - [阿里巴巴10个顶级开源项目](https://rameosu.github.io/java3c/#/SalaryIncrease/阿里巴巴10个顶级开源项目.md)
 

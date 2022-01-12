@@ -53,6 +53,8 @@
 <span id="nav-5"></span>
 
 ## 💾 数据库
+- [MySQL查看数据库容量](https://rameosu.github.io/java3c/#/Database/MySQL查看数据库容量.md)
+
 <span id="nav-6"></span>
 ## 📐 UML
 - [设计模式（脑图版）](https://rameosu.github.io/java3c/#/UML/设计模式（脑图版）.md)

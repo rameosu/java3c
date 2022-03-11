@@ -4,13 +4,13 @@
 ### 1、下载并安装MySQL官方的 Yum Repository
 
 ```shell
-[root@Rameo ~]# wget -i -c http://dev.mysql.com/get/mysql57-community-release-el7-10.noarch.rpm
+[root@Rameo ~]# wget https://dev.mysql.com/get/mysql80-community-release-el8-1.noarch.rpm
 ```
 
 使用上面的命令就直接下载了安装用的Yum Repository，此时就可以直接yum安装了。
 
 ```shell
-[root@Rameo ~]# yum -y install mysql57-community-release-el7-10.noarch.rpm
+[root@Rameo ~]# yum install mysql80-community-release-el8-1.noarch.rpm
 ```
 
 开始安装MySQL服务器
@@ -19,7 +19,13 @@
 [root@Rameo ~]# yum -y install mysql-community-server
 ```
 
-### 2、启动MySQL服务
+### 2、检查数据源
+
+```shell
+[root@Rameo ~]# yum repolist enabled | grep "mysql.*-community.*"
+```
+
+### 3、启动MySQL服务
 
 ```shell
 [root@Rameo ~]# systemctl start mysqld.service
@@ -31,6 +37,48 @@
 ```
 出现如下信息，证明启动成功
 ![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6139f2161e0e4155adeb19b2c16d9f94~tplv-k3u1fbpfcp-watermark.image)
+
+### 4、显示mysql的随机密码
+
+```shell
+[root@Rameo ~]# grep 'temporary password' /var/log/mysqld.log
+```
+
+### 5、登录并修改mysql密码
+
+```shell
+[root@Rameo ~]# mysql -u root -p
+```
+
+修改密码：
+
+```sql
+mysql> ALTER USER 'root'@'localhost' IDENTIFIED BY '新密码';
+```
+
+### 6、开放远程访问
+
+```sql
+mysql> create user 'root'@'%' identified by '新密码';
+```
+
+ ```sql
+ mysql> grant all privileges on *.* to 'root'@'%' with grant option;                                  
+ ```
+
+            ```sql
+            mysql> ALTER USER 'root'@'%' IDENTIFIED BY '新密码' PASSWORD EXPIRE NEVER;                                  
+            ```
+
+          ```sql
+          ALTER USER 'root'@'%' IDENTIFIED WITH mysql_native_password BY '新密码';  
+          ```
+
+                             ```sql
+                             mysql> FLUSH PRIVILEGES;                    
+                             ```
+
+
 
 ## 重置MySQL8.0密码
 
